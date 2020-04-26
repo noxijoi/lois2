@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Логические основы интеллектуальных систем</title>
+</head>
+<script src="./scripts/scriptWorkWithFormula.js"></script>
+<script src="./scripts/tableTruth.js"></script>
+<script src="./scripts/scriptOperation.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<body>
+
+<div class="row">
+    <div class="col">
+        <h3>Поиск фиктивных переменных в формуле</h3>
+        <input id="outputTypeFormula" type="text" name="outputTypeFormula"/>
+        <button id="check" onclick="newTestTypeFormula()">Проверить формулу</button>
+        <div id="hiddenForm" hidden>
+            <h3>Таблица истинности</h3>
+            <table>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+        <div class="output" id="outputCheckTypeFormula"></div>
+        <div id="dummy"></div>
+    </div>
+    <div class="col">
+        <h3>Тестирование</h3>
+        <div id="test-result">
+        </div>
+        <button id="next-test" onclick="nextTest()">next test</button>
+        <div>
+            <div id="test-formula"></div>
+            <button id="yes" onclick="yesClick()">Да</button>
+            <button id="no" onclick="noClick()">Нет</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
